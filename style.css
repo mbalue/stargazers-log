@@ -30,7 +30,7 @@ h1 {
 
 header p {
   font-size: 1.1rem;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 #repositories-list {
@@ -56,6 +56,16 @@ header p {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .repo-card:hover {
+    transform: none;
+  }
+  .repo-card,
+  .repo-link {
+    transition: none;
+  }
+}
+
 .repo-header {
   margin-bottom: 12px;
 }
@@ -69,7 +79,7 @@ header p {
 
 .repo-owner {
   font-size: 0.9rem;
-  color: #666;
+  color: #555;
 }
 
 .repo-description {
@@ -110,15 +120,22 @@ header p {
   text-decoration: none;
   font-weight: 500;
   transition: background-color 0.2s ease;
+  border: 2px solid transparent;
 }
 
 .repo-link:hover {
   background: #5568d3;
 }
 
+.repo-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  background: #5568d3;
+}
+
 .repo-date {
   font-size: 0.8rem;
-  color: #999;
+  color: #888;
   margin-top: 10px;
 }
 

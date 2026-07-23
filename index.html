@@ -12,9 +12,9 @@
         <h1>Stargazers log</h1>
         <p>A log of the repositories I've starred.</p>
       </header>
-      <div id="loading"></div>
-      <ul id="repositories-list"></ul>
-      <div id="error"></div>
+      <div id="loading" role="status" aria-live="polite" aria-label="Loading status"></div>
+      <ul id="repositories-list" aria-label="Starred repositories"></ul>
+      <div id="error" role="alert" aria-live="assertive"></div>
     </div>
     <script src="script.js"></script>
   </body>
