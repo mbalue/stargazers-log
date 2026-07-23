@@ -48,5 +48,25 @@
     "stars": 125000,
     "language": "TypeScript",
     "starredAt": "2023-05-12"
+  },
+    {
+    "id": 6,
+    "name": "github docs",
+    "owner": "github",
+    "description": "The documentation for GitHub, including guides, API references, and tutorials.",
+    "url": "https://github.com/github/docs",
+    "stars": 150000,
+    "language": "Documentation",
+    "starredAt": "2024-02-02"
+  },
+      {
+    "id": 7,
+    "name": "octo repo",
+    "owner": "octo Organization",
+    "description": "A tutorial repository.",
+    "url": "https://github.com/octo-org/octo-repo",
+    "stars": 980000,
+    "language": "JavaScript",
+    "starredAt": "2024-03-21"
   }
 ]
